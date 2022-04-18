@@ -8,5 +8,6 @@ it('can generate code', function () {
         $uniqueCodeGenerator
             ->characterList('LQJCKZMWDPTSXRGANYVBHF')
             ->outputLength(6)
-            ->generate(4));
+            ->generate(4)
+    );
 });
