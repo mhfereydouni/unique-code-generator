@@ -41,7 +41,7 @@ class UniqueCodeGenerator
         $this->obfuscatorPrime = $obfuscatorPrime;
     }
 
-    public function characterList(string $characterList): static
+    public function characterList(string $characterList): self
     {
         if (empty($characterList)) {
             throw new ValueError('Character list must not be empty');
@@ -52,7 +52,7 @@ class UniqueCodeGenerator
         return $this;
     }
 
-    public function outputLength(int $outputLength = 10): static
+    public function outputLength(int $outputLength = 10): self
     {
         if ($outputLength < 1) {
             throw new ValueError('Output length must be greater than 0');
